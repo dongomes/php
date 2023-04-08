@@ -9,6 +9,16 @@
 </head>
 <body>
   <?php
+    /*
+    public: hace que la variable/funcion se pueda acceder desde cualquier lugar, como por ejemplo otyras clases y  otras instancias de esa misma clase.
+
+    private: hace que la variable/funcion se pueda utilizar desde la misma clase que las define.
+
+    protected: hace que la variable/funcion se pueda acceder desde la clase que las define y tambien desde cualquier otra clase que herede de ella .
+    */
+
+    //En otras palabras "private":solo tu , "protected" = tu y tus dependientes, "public": cualquiera.
+
     class Carro {
       public $color;
       private $anio;
