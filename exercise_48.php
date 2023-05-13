@@ -79,16 +79,16 @@
   <h1>Ejemplo de validación de formularios en PHP</h1>
   <p><span class="error">* campo requerido</span></p>
   <form method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    Nombre: <input type="text" name="nombre">
+    Nombre: <input type="text" name="nombre" value="<?= $nombre ?>">
     <span class="error">* <?= $errorNombre ?></span>
     <br><br>
-    E-mail: <input type="text" name="email">
+    E-mail: <input type="text" name="email" value="<?= $email ?>">
     <span class="error">* <?= $errorEmail ?></span>
     <br><br>
-    Ciudad: <input type="text" name="ciudad"><br><br>
-    Dirección: <textarea name="direccion" rows="10" cols="50"></textarea>
+    Ciudad: <input type="text" name="ciudad" value="<?= $ciudad ?>"><br><br>
+    Dirección: <textarea name="direccion" rows="10" cols="50"><?= $direccion ?></textarea>
     <br><br>
-    Sitio Web: <input type="text" name="sitioWeb">
+    Sitio Web: <input type="text" name="sitioWeb" value="<?= $sitioWeb ?>">
     <span class="error"><?= $errorSitioWeb ?></span>
     <br><br>
     Genero: 
