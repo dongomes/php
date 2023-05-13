@@ -10,15 +10,20 @@
   <title>Manejo de Formularios en PHP</title>
 </head>
 <body>
-  <?php
+<?php
     /*
       los variables super globales para capturar data en PHP son $_GET y $_POST
     */
   ?>
 
-  <form action="bienvenida.php" method="post">
+  <form method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     Nombre: <input type="text" name="nombre"><br>
     E-mail: <input type="text" name="email"><br>
+    Ciudad: <input type="text" name="ciudad"><br>
+    Dirección: <textarea name="direccion" rows="10" cols="50"></textarea>
+    Genero: 
+    <input type="radio" name="genero" value="mujer">Mujer
+    <input type="radio" name="genero" value="hombre">Hombre
     <input type="submit">
   </form>
 </body>

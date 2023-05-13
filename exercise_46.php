@@ -16,7 +16,7 @@
     */
   ?>
 
-  <form action="bienvenida.php" method="post">
+  <form action="bienvenida_get.php" method="get">
     Nombre: <input type="text" name="nombre"><br>
     E-mail: <input type="text" name="email"><br>
     <input type="submit">

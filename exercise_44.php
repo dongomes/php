@@ -64,15 +64,14 @@
 
     // meta caracteres
     | // pipe
-
     */
 
     echo "<br>";
     echo "<br>";
 
-    $cadena5 = "Manzanas lechosas y papayas";
-    $patron5 = "/(pa){2}yas/i";
-    echo preg_match ($patron5, $cadena5); // retorna 1
+    $cadena5 = "manzanas lechosas y papapayas";
+    $patron5 = "/(pa){3}yas/i";
+    echo preg_match($patron5, $cadena5); // retorna 1
   ?>
 </body>
 </html>
